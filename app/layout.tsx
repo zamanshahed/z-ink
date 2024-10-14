@@ -16,9 +16,6 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Z-Ink",
   description: "Crafted zamanShahed",
-  icons: {
-    icon: "favicon.png",
-  },
 };
 
 export default function RootLayout({
@@ -32,7 +29,7 @@ export default function RootLayout({
         <link rel="icon" href="./icon.png" type="image/png" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-cMainBgBlack text-cTextPrimary min-h-screen w-full`}
       >
         {children}
       </body>
