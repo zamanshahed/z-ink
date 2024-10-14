@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: "Z-Ink",
   description: "Crafted zamanShahed",
   icons: {
-    icon: 'favicon.png',
+    icon: "favicon.png",
   },
 };
 
@@ -28,6 +28,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="./icon.png" type="image/png" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
