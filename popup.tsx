@@ -1,24 +1,19 @@
 import { useState } from "react"
 
+import "./style.css"
+
+import Branding from "~components/Branding"
+import CommonButton from "~components/CommonButton"
+
 function IndexPopup() {
   const [data, setData] = useState("")
 
   return (
-    <div
-      style={{
-        padding: 16
-      }}>
-      <h2>
-        Welcome to your{" "}
-        <a href="https://www.plasmo.com" target="_blank">
-          Plasmo
-        </a>{" "}
-        Extension!
-      </h2>
-      <input onChange={(e) => setData(e.target.value)} value={data} />
-      <a href="https://docs.plasmo.com" target="_blank">
-        View Docs
-      </a>
+    <div className="bg-[#1E1E26] text-[#77A6A3] p-3 w-[400px] h-[250px]">
+      <div className="flex items-start justify-between">
+        <Branding />
+        <CommonButton label="Add Link" />
+      </div>
     </div>
   )
 }
